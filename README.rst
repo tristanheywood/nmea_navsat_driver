@@ -9,3 +9,5 @@ API
 This package has no released Code API.
 
 The ROS API documentation and other information can be found at http://ros.org/wiki/nmea_navsat_driver
+
+

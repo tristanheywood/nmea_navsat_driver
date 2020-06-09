@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(nmea_navsat_driver)
 
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+   sensor_msgs
+)
 
 catkin_python_setup()
 catkin_package()
@@ -19,8 +21,3 @@ install(DIRECTORY launch/
    FILES_MATCHING PATTERN "*.launch"
 )
 
-if (CATKIN_ENABLE_TESTING)
-  find_package(roslint)
-  roslint_python()
-  roslint_add_test()
-endif()
